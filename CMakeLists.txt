@@ -27,7 +27,7 @@ set_target_properties(clib PROPERTIES OUTPUT_NAME "clib")
 
 # Install targets
 install(TARGETS clib
-        ARCHIVE DESTINATION /usr/lib/clib/
+        ARCHIVE DESTINATION /usr/lib/clib
         RUNTIME DESTINATION bin)
 
 # Install include files
