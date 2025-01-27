@@ -1,15 +1,5 @@
-#ifndef LOG_H
-#define LOG_H
-#include <stdarg.h>
-// same as printf
-void logp(const char *fmt, ...);
-void logd(const char *fmt, ...);
-void logi(const char *fmt, ...);
-void logw(const char *fmt, ...);
-void loge(const char *fmt, ...);
+#include <log.h>
 
-#endif
-#ifdef LOG_IMPLENTATION_PSYCH_H
 // Settings
 /*#define MUTE_LOG_P*/
 /*#define MUTE_LOG_D*/
@@ -67,4 +57,3 @@ void loge(const char *fmt, ...) {
   fprintf(stderr, "\n");
 #endif
 }
-#endif
